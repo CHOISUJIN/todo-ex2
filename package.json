@@ -14,8 +14,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "http://CHOISUJIN.github.io/todolist",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -26,6 +29,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "react-dev-utils": "^6.0.5"
   }
 }
